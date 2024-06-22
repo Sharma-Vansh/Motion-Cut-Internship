@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="#" class="logo">Home</a>
+        </div>
+        <div class="header-right">
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
+            <a href="#">Login</a>
+        </div>
+    </header>
+    <div class="product-section">
+        <h1>Electronics</h1>
+        <div class="product-grid">
+            <div class="product-card" onclick="showDetails('Laptop', 'High performance laptop.', '$999')">
+                <img src="C:\Users\ASUS\Desktop\vansh\images.jpeg" alt="Laptop">
+                <h2>Laptop</h2>
+                <p>$999</p>
+            </div>
+            <div class="product-card" onclick="showDetails('Smartphone', 'Latest smartphone model.', '$799')">
+                <img src="C:\Users\ASUS\Desktop\vansh\images (1).jpeg" alt="Smartphone">
+                <h2>Smartphone</h2>
+                <p>$799</p>
+            </div>
+            <div class="product-card" onclick="showDetails('Tablet', 'Portable tablet.', '$499')">
+                <img src="C:\Users\ASUS\Desktop\vansh\633b51122af1ce605a57ae50-10-1.jpg" alt="Tablet">
+                <h2>Tablet</h2>
+                <p>$499</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-section">
+        <h1>Home Appliances</h1>
+        <div class="product-grid">
+            <div class="product-card" onclick="showDetails('Refrigerator', 'Energy efficient refrigerator.', '$1200')">
+                <img src="C:\Users\ASUS\Desktop\vansh\images (2).jpeg" alt="Refrigerator">
+                <h2>Refrigerator</h2>
+                <p>$1200</p>
+            </div>
+            <div class="product-card" onclick="showDetails('Washing Machine', 'Top load washing machine.', '$700')">
+                <img src="C:\Users\ASUS\Desktop\vansh\images (3).jpeg" alt="Washing Machine">
+                <h2>Washing Machine</h2>
+                <p>$700</p>
+            </div>
+            <div class="product-card" onclick="showDetails('Microwave', 'Compact microwave oven.', '$150')">
+                <img src="C:\Users\ASUS\Desktop\vansh\download.jpeg" alt="Microwave">
+                <h2>Microwave</h2>
+                <p>$150</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-section">
+        <h1>Fashion</h1>
+        <div class="product-grid">
+            <div class="product-card" onclick="showDetails('T-Shirt', 'Comfortable cotton t-shirt.', '$20')">
+                <img src="C:\Users\ASUS\Desktop\vansh\lush_green_men_base_19_05_2023_700x933.jpg" alt="T-Shirt">
+                <h2>T-Shirt</h2>
+                <p>$20</p>
+            </div>
+            <div class="product-card" onclick="showDetails('Jeans', 'Stylish denim jeans.', '$50')">
+                <img src="C:\Users\ASUS\Desktop\vansh\download (1).jpeg" alt="Jeans">
+                <h2>Jeans</h2>
+                <p>$50</p>
+            </div>
+            <div class="product-card" onclick="showDetails('Sneakers', 'Sporty sneakers.', '$80')">
+                <img src="C:\Users\ASUS\Desktop\vansh\download (2).jpeg" alt="Sneakers">
+                <h2>Sneakers</h2>
+                <p>$80</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-section">
+        <h1>Groceries</h1>
+        <div class="product-grid">
+            <div class="product-card" onclick="showDetails('Apple', 'Fresh red apples.', '$3 per lb')">
+                <img src="C:\Users\ASUS\Desktop\vansh\download (3).jpeg" alt="Apple">
+                <h2>Apple</h2>
+                <p>$3 per lb</p>
+            </div>
+            <div class="product-card" onclick="showDetails('Bread', 'Whole grain bread.', '$2 per loaf')">
+                <img src="C:\Users\ASUS\Desktop\vansh\images (4).jpeg" alt="Bread">
+                <h2>Bread</h2>
+                <p>$2 per loaf</p>
+            </div>
+            <div class="product-card" onclick="showDetails('Milk', 'Organic milk.', '$4 per gallon')">
+                <img src="C:\Users\ASUS\Desktop\vansh\download (4).jpeg" alt="Milk">
+                <h2>Milk</h2>
+                <p>$4 per gallon</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-section">
+        <h1>Books</h1>
+        <div class="product-grid">
+            <div class="product-card" onclick="showDetails('Novel', 'A thrilling mystery novel.', '$15')">
+                <img src="C:\Users\ASUS\Desktop\vansh\images (5).jpeg" alt="Novel">
+                <h2>Novel</h2>
+                <p>$15</p>
+            </div>
+            <div class="product-card" onclick="showDetails('Science Book', 'An informative science book.', '$25')">
+                <img src="C:\Users\ASUS\Desktop\vansh\download (6).jpeg" alt="Science Book">
+                <h2>Science Book</h2>
+                <p>$25</p>
+            </div>
+            <div class="product-card" onclick="showDetails('Cookbook', 'Delicious recipes for everyone.', '$30')">
+                <img src="C:\Users\ASUS\Desktop\vansh\download (7).jpeg" alt="Cookbook">
+                <h2>Cookbook</h2>
+                <p>$30</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
